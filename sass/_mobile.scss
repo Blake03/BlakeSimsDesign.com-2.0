@@ -92,7 +92,7 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Mobile styles
    ========================================================================== */
 body{
     color: $primary-color;
@@ -106,17 +106,37 @@ body{
     text-align: center
 }
 
-.wrapper{
-    padding-top: 15vh;
+    #welcome .wrapper{
+        padding-top: 15vh;
+    
+    .ghost-button{
+        display: inline-block;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        padding: 2px;
+        margin: 5px 2px;
+        width: 35vw;
+        font-size: 4vw;
+    }  
+    .heading{
+        font-size: 9.8vw;
+        line-height: 1;
+    }
+
+    .sub-heading{
+        font-size: 7.1vw;
+    }     
+
+    .social-icons a{
+        font-size: 8vw;
+        margin: 0px 3px;
+    }       
+
 }
 
-.heading{
-    font-size: 9.5vw;
-}
 
-.sub-heading{
-    font-size: 7vw;
-}
+
+
 
 
 

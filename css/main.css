@@ -109,7 +109,7 @@ textarea {
   padding: 0.2em 0; }
 
 /* ==========================================================================
-   Author's custom styles
+   Mobile styles
    ========================================================================== */
 body {
   color: #fff; }
@@ -119,14 +119,24 @@ body {
   height: 100vh;
   text-align: center; }
 
-.wrapper {
+#welcome .wrapper {
   padding-top: 15vh; }
-
-.heading {
-  font-size: 9.5vw; }
-
-.sub-heading {
-  font-size: 7vw; }
+  #welcome .wrapper .ghost-button {
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 5px 2px;
+    width: 35vw;
+    font-size: 4vw; }
+  #welcome .wrapper .heading {
+    font-size: 9.8vw;
+    line-height: 1; }
+  #welcome .wrapper .sub-heading {
+    font-size: 7.1vw; }
+  #welcome .wrapper .social-icons a {
+    font-size: 8vw;
+    margin: 0px 3px; }
 
 /* ==========================================================================
    Helper classes
