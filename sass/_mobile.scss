@@ -43,7 +43,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 1em 0;
+    margin: 3em 0;
     padding: 0;
 }
 
@@ -98,6 +98,9 @@ body{
     color: $primary-color;
 }
 
+h2{
+    font-size: 8vw;
+}
 
 
 #welcome{
@@ -137,10 +140,59 @@ body{
 
 
 
+#responsive{
+    background-color: darkblue;
+    padding-top: 1px;
+    text-align: center;
+        .wrapper{
+            padding: 20px 0px;
+            margin: 0px;                
+                img{
+                    width: 100%;
+                    max-width: 600px;
+                }
+        }
+}
 
 
 
+#development{
+    background: darkorange;
+    text-align: center;
+        .wrapper{
+            padding: 20px 0px;
+                img{
+                    width: 100%;
+                    max-width: 600px;
+                }
 
+        }
+}
+
+
+
+#work{
+    background: #290606;
+    text-align: center;
+        .wrapper{
+            padding: 20px 0px;
+                h2{
+                    padding-bottom: 20px;
+                }
+                .img-box{
+                    width: 80vw;
+                    padding: 5px;
+                    border-radius: 5px;
+                    margin: 0 auto;
+                    background: #292929;
+                    line-height: 1.2;
+                    font-size: .8em;
+                        img{
+                            width: 100%;
+                        }
+                }
+        }
+}
 
 
 

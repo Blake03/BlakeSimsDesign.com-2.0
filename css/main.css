@@ -69,7 +69,7 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
-  margin: 1em 0;
+  margin: 3em 0;
   padding: 0; }
 
 /*
@@ -114,6 +114,9 @@ textarea {
 body {
   color: #fff; }
 
+h2 {
+  font-size: 8vw; }
+
 #welcome {
   background-color: green;
   height: 100vh;
@@ -137,6 +140,44 @@ body {
   #welcome .wrapper .social-icons a {
     font-size: 8vw;
     margin: 0px 3px; }
+
+#responsive {
+  background-color: darkblue;
+  padding-top: 1px;
+  text-align: center; }
+  #responsive .wrapper {
+    padding: 20px 0px;
+    margin: 0px; }
+    #responsive .wrapper img {
+      width: 100%;
+      max-width: 600px; }
+
+#development {
+  background: darkorange;
+  text-align: center; }
+  #development .wrapper {
+    padding: 20px 0px; }
+    #development .wrapper img {
+      width: 100%;
+      max-width: 600px; }
+
+#work {
+  background: #290606;
+  text-align: center; }
+  #work .wrapper {
+    padding: 20px 0px; }
+    #work .wrapper h2 {
+      padding-bottom: 20px; }
+    #work .wrapper .img-box {
+      width: 80vw;
+      padding: 5px;
+      border-radius: 5px;
+      margin: 0 auto;
+      background: #292929;
+      line-height: 1.2;
+      font-size: .8em; }
+      #work .wrapper .img-box img {
+        width: 100%; }
 
 /* ==========================================================================
    Helper classes
