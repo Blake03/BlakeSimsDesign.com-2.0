@@ -1,5 +1,4 @@
 /*--reset--*/
-/* line 2, ../sass/_reset.scss */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -21,11 +20,9 @@ time, mark, audio, video {
   vertical-align: baseline;
   background: transparent; }
 
-/* line 24, ../sass/_reset.scss */
 ul {
   list-style: none; }
 
-/* line 28, ../sass/_reset.scss */
 a {
   margin: 0;
   padding: 0;
@@ -44,7 +41,6 @@ a {
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-/* line 21, ../sass/_mobile.scss */
 html {
   color: #222;
   font-size: 1em;
@@ -57,12 +53,10 @@ html {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-/* line 35, ../sass/_mobile.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none; }
 
-/* line 40, ../sass/_mobile.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none; }
@@ -70,7 +64,6 @@ html {
 /*
  * A better looking default horizontal rule
  */
-/* line 49, ../sass/_mobile.scss */
 hr {
   display: block;
   height: 1px;
@@ -84,7 +77,6 @@ hr {
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
-/* line 64, ../sass/_mobile.scss */
 audio,
 canvas,
 iframe,
@@ -96,7 +88,6 @@ video {
 /*
  * Remove default fieldset styles.
  */
-/* line 77, ../sass/_mobile.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -105,14 +96,12 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 87, ../sass/_mobile.scss */
 textarea {
   resize: vertical; }
 
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
-/* line 95, ../sass/_mobile.scss */
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -122,54 +111,33 @@ textarea {
 /* ==========================================================================
    Mobile styles
    ========================================================================== */
-/* line 105, ../sass/_mobile.scss */
 body {
   color: #fff; }
 
-/* line 109, ../sass/_mobile.scss */
 h2 {
   font-size: 8vw; }
 
-/* line 113, ../sass/_mobile.scss */
 .navbar {
-  font-size: 3vw;
+  font-size: 10px;
   width: 100%;
   background: rgba(0, 0, 0, 0.7);
-  position: fixed;
-  box-sizing: border-box;
-  padding: 5px; }
-  /* line 120, ../sass/_mobile.scss */
+  position: fixed; }
   .navbar .navbar-menu {
     right: 5px;
-    position: relative;
-    float: right; }
-  /* line 125, ../sass/_mobile.scss */
+    position: absolute; }
   .navbar .logo {
     position: relative;
     /* padding: 0px 5px; */
     left: 5px; }
-  /* line 130, ../sass/_mobile.scss */
   .navbar .menu-item {
-    display: inline-block;
-    padding-top: 3px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 33.33333%;
-    float: left;
-    padding-left: 0.83333%;
-    padding-right: 0.83333%;
-    text-align: center; }
+    display: inline-block; }
 
-/* line 139, ../sass/_mobile.scss */
 #welcome {
   background-color: green;
   height: 100vh;
   text-align: center; }
-  /* line 143, ../sass/_mobile.scss */
   #welcome .wrapper {
     padding-top: 15vh; }
-    /* line 145, ../sass/_mobile.scss */
     #welcome .wrapper .ghost-button {
       display: inline-block;
       border: 2px solid #fff;
@@ -178,55 +146,42 @@ h2 {
       margin: 5px 2px;
       width: 35vw;
       font-size: 4vw; }
-    /* line 154, ../sass/_mobile.scss */
     #welcome .wrapper .heading {
       font-size: 9.8vw;
       line-height: 1; }
-    /* line 158, ../sass/_mobile.scss */
     #welcome .wrapper .sub-heading {
       font-size: 7.1vw; }
-    /* line 161, ../sass/_mobile.scss */
     #welcome .wrapper .social-icons a {
       font-size: 8vw;
       margin: 0px 3px; }
 
-/* line 170, ../sass/_mobile.scss */
 #responsive {
   background-color: darkblue;
   padding-top: 1px;
   text-align: center; }
-  /* line 174, ../sass/_mobile.scss */
   #responsive .wrapper {
-    padding: 14vw 10px;
+    padding: 20px 0px;
     margin: 0px; }
-    /* line 177, ../sass/_mobile.scss */
     #responsive .wrapper img {
       width: 100%;
       max-width: 600px; }
 
-/* line 186, ../sass/_mobile.scss */
 #development {
   background: darkorange;
   text-align: center; }
-  /* line 189, ../sass/_mobile.scss */
   #development .wrapper {
-    padding: 14vw 10px; }
-    /* line 191, ../sass/_mobile.scss */
+    padding: 20px 0px; }
     #development .wrapper img {
       width: 100%;
       max-width: 600px; }
 
-/* line 201, ../sass/_mobile.scss */
 #work {
   background: #290606;
   text-align: center; }
-  /* line 204, ../sass/_mobile.scss */
   #work .wrapper {
-    padding: 14vw 10px; }
-    /* line 206, ../sass/_mobile.scss */
+    padding: 20px 0px; }
     #work .wrapper h2 {
       padding-bottom: 20px; }
-    /* line 209, ../sass/_mobile.scss */
     #work .wrapper .img-box {
       width: 80vw;
       padding: 5px;
@@ -235,23 +190,18 @@ h2 {
       background: #292929;
       line-height: 1.2;
       font-size: .8em; }
-      /* line 217, ../sass/_mobile.scss */
       #work .wrapper .img-box img {
         width: 100%; }
 
-/* line 226, ../sass/_mobile.scss */
 #about {
   background-image: url("../img/skyfield.jpg");
   background-size: cover; }
-  /* line 229, ../sass/_mobile.scss */
   #about .wrapper {
-    padding: 14vw 10px;
+    padding: 20px 10px;
     text-align: justify; }
-    /* line 232, ../sass/_mobile.scss */
     #about .wrapper h2 {
       text-align: center;
       padding-bottom: 20px; }
-    /* line 236, ../sass/_mobile.scss */
     #about .wrapper .button {
       background: #0f6f16;
       display: inline-block;
@@ -270,7 +220,6 @@ h2 {
 /*
  * Hide visually and from screen readers
  */
-/* line 266, ../sass/_mobile.scss */
 .hidden {
   display: none !important; }
 
@@ -278,7 +227,6 @@ h2 {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 275, ../sass/_mobile.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -294,7 +242,6 @@ h2 {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 292, ../sass/_mobile.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -307,7 +254,6 @@ h2 {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 306, ../sass/_mobile.scss */
 .invisible {
   visibility: hidden; }
 
@@ -322,7 +268,6 @@ h2 {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 322, ../sass/_mobile.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -330,7 +275,6 @@ h2 {
   display: table;
   /* 2 */ }
 
-/* line 328, ../sass/_mobile.scss */
 .clearfix:after {
   clear: both; }
 
@@ -342,7 +286,6 @@ h2 {
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 @media print {
-  /* line 15, ../sass/_print.scss */
   *,
   *:before,
   *:after,
@@ -355,16 +298,13 @@ h2 {
     box-shadow: none !important;
     text-shadow: none !important; }
 
-  /* line 27, ../sass/_print.scss */
   a,
   a:visited {
     text-decoration: underline; }
 
-  /* line 32, ../sass/_print.scss */
   a[href]:after {
     content: " (" attr(href) ")"; }
 
-  /* line 36, ../sass/_print.scss */
   abbr[title]:after {
     content: " (" attr(title) ")"; }
 
@@ -372,12 +312,10 @@ h2 {
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  /* line 45, ../sass/_print.scss */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: ""; }
 
-  /* line 50, ../sass/_print.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -387,27 +325,22 @@ h2 {
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  /* line 61, ../sass/_print.scss */
   thead {
     display: table-header-group; }
 
-  /* line 65, ../sass/_print.scss */
   tr,
   img {
     page-break-inside: avoid; }
 
-  /* line 70, ../sass/_print.scss */
   img {
     max-width: 100% !important; }
 
-  /* line 74, ../sass/_print.scss */
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3; }
 
-  /* line 81, ../sass/_print.scss */
   h2,
   h3 {
     page-break-after: avoid; } }

@@ -1,5 +1,6 @@
 $primary-color: #fff;
-
+$section-padding: 14vw 10px;
+@import "susy";
 @import "reset";
 @import "mobile";
 @import "print";

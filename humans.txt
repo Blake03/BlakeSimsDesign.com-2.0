@@ -1,15 +1,30 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
 
-# TEAM
+# Greetings human
 
-    <name> -- <role> -- <twitter>
+	My name is BlakeSimsDesign.com
 
-# THANKS
+	I was built by Blake Sims
 
-    <name>
+	If you would like to work with Blake
 
-# TECHNOLOGY COLOPHON
+	His contact information is listed below
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+
+# Contact Info
+
+    Name = Blake Sims
+
+    Email = Blake@edelta.net
+
+    Twitter = twitter.com/blakeSims2003
+
+    GitHub = github.com/Blake03
+
+        
+# Technology Used
+                   
+	HTML5, CSS3, SASS, jQuery,
+
+	Modernizer, Font Awesome, Normalize.css,
+
+	SublimeText 3, Git, Photoshop cc, Linux
