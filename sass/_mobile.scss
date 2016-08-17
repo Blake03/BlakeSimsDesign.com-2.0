@@ -110,6 +110,11 @@ h2{
     font-size: 8vw;
 }
 
+strong{
+    font-weight: bold;
+    color: #dcc66d;
+}
+
 .navbar{
     font-size: 3vw;
     width: 100%;
@@ -137,8 +142,11 @@ h2{
 
 
 #welcome{
-    background-color: green;
+    background-image: url("../img/bsd-bg.jpg");
     height: 100vh;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
         .wrapper{
             padding-top: 15vh;
@@ -168,12 +176,13 @@ h2{
 
 
 #responsive{
-    background-color: darkblue;
+    background-color: #333352;
     padding-top: 1px;
     text-align: center;
         .wrapper{
-            padding: $section-padding;
-            margin: 0px;                
+            padding: $wrapper-padding;
+            margin: 0px auto;
+            max-width: 400px;                
                 img{
                     width: 100%;
                     max-width: 600px;
@@ -184,10 +193,12 @@ h2{
 
 
 #development{
-    background: darkorange;
+    background: #26561e;
     text-align: center;
         .wrapper{
-            padding: $section-padding;
+            padding: $wrapper-padding;
+            margin: 0px auto;
+            max-width: 400px;
                 img{
                     width: 100%;
                     max-width: 600px;
@@ -202,7 +213,7 @@ h2{
     background: #290606;
     text-align: center;
         .wrapper{
-            padding: $section-padding;
+            padding: $wrapper-padding;
                 h2{
                     padding-bottom: 20px;
                 }
@@ -227,11 +238,14 @@ h2{
     background-image: url("../img/skyfield.jpg");
     background-size: cover;
         .wrapper{
-            padding: $section-padding;
+            padding: $wrapper-padding;
             text-align: justify;
+            max-width: 500px;
+            margin: 0 auto;
                 h2{
                     text-align: center;
                     padding-bottom: 20px;
+                    color: #dcc66d;
                 }
                 .button{
                     background: #0f6f16;
