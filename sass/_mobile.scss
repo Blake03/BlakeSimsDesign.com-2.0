@@ -88,9 +88,9 @@ textarea {
     resize: vertical;
 }
 
-/* ==========================================================================
+/* ===========================================================
    Browser Upgrade Prompt
-   ========================================================================== */
+   =========================================================== */
 
 .browserupgrade {
     margin: 0.2em 0;
@@ -99,15 +99,22 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
+
+
+
+/* ====================================================================================
    Mobile styles
-   ========================================================================== */
+   ==================================================================================== */
+
 body{
     color: $primary-color;
 }
 
 h2{
     font-size: 8vw;
+    @media only screen and (min-width: $tablet) {
+        font-size: 7vw;
+    }
 }
 
 strong{
@@ -177,15 +184,16 @@ strong{
 
 #responsive{
     background-color: #333352;
-    padding-top: 1px;
     text-align: center;
         .wrapper{
             padding: $wrapper-padding;
             margin: 0px auto;
-            max-width: 400px;                
+            @media only screen and (min-width: $tablet) {
+                    max-width: 66vw;
+                    font-size: 2.3vw;
+                }               
                 img{
                     width: 100%;
-                    max-width: 600px;
                 }
         }
 }
@@ -198,10 +206,12 @@ strong{
         .wrapper{
             padding: $wrapper-padding;
             margin: 0px auto;
-            max-width: 400px;
+                @media only screen and (min-width: $tablet) {
+                    max-width: 66vw;
+                    font-size: 2.3vw;
+                }
                 img{
                     width: 100%;
-                    max-width: 600px;
                 }
 
         }
@@ -218,7 +228,7 @@ strong{
                     padding-bottom: 20px;
                 }
                 .img-box{
-                    width: 80vw;
+                    max-width: 45vh;
                     padding: 5px;
                     border-radius: 5px;
                     margin: 0 auto;
