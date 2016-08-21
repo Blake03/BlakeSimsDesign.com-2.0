@@ -7,12 +7,21 @@ $susy: (
 );
 
 $primary-color: #fff;
-$wrapper-padding: 11vw 15px;
+$wrapper-padding-mobile: 11vw 15px;
 $wrapper-padding-desktop: 8vw 15px;
-$tablet: 600px;
-$desktop: 860px;
+
+$breakpoint-tablet: 600px;
+$breakpoint-desktop: 860px;
+
+$background-welcome: url("../img/bsd-bg.jpg");
+$background-responsive: #333352;
+$background-development: #26561e;
+$background-work: #290606;
+$background-who-is-blake: url("../img/skyfield.jpg");
+
 
 @import "susy";
+@import "normalize";
 @import "reset";
 @import "mobile";
 @import "desktop";
