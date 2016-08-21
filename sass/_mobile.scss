@@ -6,6 +6,7 @@ $susy: (
   gutter-position: inside,
 );
 
+
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
@@ -117,6 +118,7 @@ h2{
     }
 }
 
+
 strong{
     font-weight: bold;
     color: #dcc66d;
@@ -129,7 +131,7 @@ strong{
     position: fixed;
     box-sizing: border-box;
     padding: 5px;
-        .navbar-menu{
+        .navbar-toggle{
             right: 5px;
             position: relative;
             float: right;
@@ -157,6 +159,13 @@ strong{
     text-align: center;
         .wrapper{
             padding-top: 15vh;
+                .heading{
+                    font-size: 9.8vw;
+                    line-height: 1;
+                }
+                .sub-heading{
+                    font-size: 7.1vw;
+                }   
                 .ghost-button{
                     display: inline-block;
                     border: 2px solid #fff;
@@ -165,14 +174,7 @@ strong{
                     margin: 5px 2px;
                     width: 35vw;
                     font-size: 4vw;
-                }  
-                .heading{
-                    font-size: 9.8vw;
-                    line-height: 1;
-                }
-                .sub-heading{
-                    font-size: 7.1vw;
-                }     
+                }    
                 .social-icons a{
                     font-size: 8vw;
                     margin: 0px 3px;
@@ -227,7 +229,7 @@ strong{
                 h2{
                     padding-bottom: 20px;
                 }
-                .img-box{
+                .image-box{
                     max-width: 45vh;
                     padding: 5px;
                     border-radius: 5px;

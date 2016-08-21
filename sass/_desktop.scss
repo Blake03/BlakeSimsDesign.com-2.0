@@ -1,0 +1,86 @@
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);
+
+
+
+@media only screen and (min-width: $desktop){
+h2{
+	font-size: 5vw;
+}
+
+
+.navbar{
+	font-size: 2vw;
+}
+
+#welcome .wrapper{	
+	.heading{
+		font-size: 7.8vw;
+	}
+	.sub-heading{
+		font-size: 5.1vw;
+	}
+	.ghost-button{
+    	border: .3vw solid #fff;
+    	border-radius: .5vw;
+    	padding: 4px 10px;
+    	margin: 5px 2px;
+    	font-size: 1.7vw;
+    	font-weight: bold;
+    	width: unset;
+	}
+	.social-icons a{
+		font-size: 5vw;
+    	margin: 0px 1vw;
+	}
+
+}
+
+
+#responsive{
+	.wrapper{
+		@include container;
+		padding: $wrapper-padding-desktop;
+		.image-box{
+			@include span(6 of 12);
+			img{
+				max-width: 75vh;
+			}
+		}
+		.text-box{
+			padding-top: 150px;
+			@include span(6 of 12);
+			}
+	}
+}
+
+#development{
+	.wrapper{
+		@include container;
+		padding: $wrapper-padding-desktop;
+			.image-box{
+				@include span(6 of 12);
+				float: right;
+				img{
+					max-width: 75vh
+				}
+			}
+			.text-box{
+				@include span(6 of 12);
+				padding-top: 92px;
+			}
+	}
+}
+
+
+
+
+
+
+}
+

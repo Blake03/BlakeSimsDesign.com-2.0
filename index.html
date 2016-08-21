@@ -24,10 +24,10 @@
 start-navbar
 -->
 
-<nav class="navbar">
+<nav class="navbar" style="">
     <div class="navbar-header">
         <a class="logo" href="#welcome">BlakeSimsDesign</a>
-        <a class="navbar-menu">Menu</a>
+        <a class="navbar-toggle">Menu</a>
     </div><!--navbar-header-->
     <div class="navbar-menue" style="">
               <ul>
@@ -85,7 +85,7 @@ start-responsive-section
 <section id="responsive">
     <dir class="wrapper">
         <h2><a href="#responsive">Responsive Design</a></h2>
-        <div class="img-box">
+        <div class="image-box">
             <img src="img/responsivescreens6.png">
         </div><!--img-box-->
         <div class="text-box">
@@ -106,7 +106,7 @@ start-development-section
 <section id="development">
     <div class="wrapper">
         <h2><a href="#development">Development</a></h2>
-        <div class="img-box">
+        <div class="image-box">
             <img src="img/development1.png">
         </div><!--img-box-->
         <div class="text-box">
@@ -128,23 +128,23 @@ start-work-section
 <section id="work">
     <div class="wrapper">
         <h2><a href="#work">My Works</a></h2>
-        <div class="img-box">
+        <div class="image-box">
             <a href="https://www.leilaalexandra.com">
                 <img src="img/mobile-screenshot-leila.jpg"></a>
             <p>LeilaAlexandra.com is a fully responsive single-page art gallery that I built from scratch using HTML5/CSS3, jQuery and PhotoShop.</p>
         </div><!--img-box-->
         <hr>
-        <div class="img-box">
+        <div class="image-box">
             <img src="img/mobile-screenshot-msi.jpg">
             <p>MSIdrywall.com, MSI is a multinational construction company. This website is powered by WordPress and features a login area for members and a Flash header that I built before Flash became obsolete.</p>
         </div><!--img-box-->
         <hr>
-        <div class="img-box">
+        <div class="image-box">
             <img src="img/mobile-screenshot-mcgeheechamber.jpg">
             <p>McgeheeChamber.com is a Wordpress blog that I built for the chamber of commerce in my little hometown. I also taught the owner how to update content and post current info and articles.</p>
         </div><!--img-box-->
         <hr>
-        <div class="img-box">
+        <div class="image-box">
             <img src="img/mobile-screenshot-arkansascity.jpg">
             <p>ArkansasCityUSA.com Is a WordPress site that I built for our state representative in order to promote tourism to the historic town of Arkansas City. It features a javascript powered image carousel header.</p>
         </div><!--img-box-->
@@ -184,6 +184,12 @@ end-about-section
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+<script type="text/javascript">
+$(".navbar-toggle").click(function(){
+    $(".navbar-menue").toggle();
+});
+</script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

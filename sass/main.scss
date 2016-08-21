@@ -1,8 +1,19 @@
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);
+
 $primary-color: #fff;
-$wrapper-padding: 14vw 15px;
+$wrapper-padding: 11vw 15px;
+$wrapper-padding-desktop: 8vw 15px;
 $tablet: 600px;
+$desktop: 860px;
 
 @import "susy";
 @import "reset";
 @import "mobile";
+@import "desktop";
 @import "print";
