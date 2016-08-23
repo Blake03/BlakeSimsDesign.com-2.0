@@ -1,14 +1,16 @@
-
-
-
 @media only screen and (min-width: $breakpoint-desktop){
+
+.desktop-only{
+	display: inherit;
+}
+
 h2{
-	font-size: 5vw;
+	font-size: 3vw;
 }
 
 
 .navbar{
-	font-size: 2vw;
+	font-size: 1.5vw;
 }
 
 #welcome .wrapper{	
@@ -68,9 +70,52 @@ h2{
 }
 
 
+#work{
+	.wrapper{
+		@include container;
+		padding: $wrapper-padding-desktop;
+		.large-image-box{
+			width: 56vw;
+    		display: inline-block;
+    		float: left;
+			img{
+				max-height: 70vh;
+				padding: 0px 2px;
+				@media only screen and (min-width: 1025px){
+				padding: 0px 10px;
+				}
+				@media only screen and (min-width: 1200px){
+					padding: 0px 30px;
+				}
+			}
+			img:nth-child(3){
+				padding-right: 0px;
+			}
+		}
+		.large-text-box{
+    		max-width: 35vw;
+    		text-align: justify;
+    		display: inline-block;
+			h4{
+				text-align: center
+			}
+			p{
+				padding-bottom: 40px;
+			}
+		}
+		.image-box{
+			display: inline-block;
+			margin: 6px;
+			@media only screen and (min-width: 1040px){
+				margin: 19px;
+			}
+		}
+	}
+}
 
 
-
-
+#work .wrapper .mobile-only{
+	display: none;
+}
 }
 

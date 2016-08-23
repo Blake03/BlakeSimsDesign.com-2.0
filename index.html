@@ -23,12 +23,12 @@
 start-navbar
 -->
 
-<nav class="navbar" style="">
+<nav class="navbar" style="display: none;">
     <div class="navbar-header">
         <a class="logo" href="#welcome">BlakeSimsDesign</a>
         <a class="navbar-toggle">Menu</a>
     </div><!--navbar-header-->
-    <div class="navbar-menue" style="">
+    <div class="navbar-menue" style="display: none;">
               <ul>
                 <a class="menu-item" href="#responsive"><li>What Blake Does</li></a>
                 <a class="menu-item" href="#work"><li>Blake's Work</li></a>
@@ -119,6 +119,8 @@ end-development-section
 ====================================================
 -->
 
+
+
 <!--
 ====================================================
 start-work-section
@@ -127,22 +129,36 @@ start-work-section
 <section id="work">
     <div class="wrapper">
         <h2><a href="#work">My Works</a></h2>
-        <div class="image-box">
+        <div class="desktop-only clearfix">
+            <div class="large-image-box">
+                    <img src="img/screenshot-liela-phone.png">
+                    <img src="img/screenshot-liela-tablet.png">
+                    <img src="img/screenshot-liela-desktop.png">
+            </div><!--large-image-box-->   
+            <div class="large-text-box">
+                <h4>LeilaAlexandra.com</h4>
+                <p>LeilaAlexandra.com is a fully responsive single-page art gallery that I built from scratch using HTML5/CSS3, jQuery, and PhotoShop. It features a lightbox gallery, smooth scroll navigation, show/hide button, and an animated back top button. It uses the power of HTML5 Boilerplate and Normalize.css to ensure that it looks beautiful on any possible combination of browsers and devices.</p>
+                <h4>Testamonial</h4>
+                <p>I am very pleased with the work done by Blake. He was professional, quick to respond, and helped me understand website development - something I had no previous experience with.</p>
+            </div><!--large-text-box-->
+        </div><!--desktop-only-->
+
+        <div class="image-box mobile-only">
             <a href="https://www.leilaalexandra.com">
                 <img src="img/mobile-screenshot-leila.jpg"></a>
             <p>LeilaAlexandra.com is a fully responsive single-page art gallery that I built from scratch using HTML5/CSS3, jQuery and PhotoShop.</p>
-        </div><!--img-box-->
+        </div><!--img-box-mobile-only-->
         <hr>
         <div class="image-box">
             <img src="img/mobile-screenshot-msi.jpg">
             <p>MSIdrywall.com, MSI is a multinational construction company. This website is powered by WordPress and features a login area for members and a Flash header that I built before Flash became obsolete.</p>
         </div><!--img-box-->
-        <hr>
+        <hr class="mobile-only">
         <div class="image-box">
             <img src="img/mobile-screenshot-mcgeheechamber.jpg">
             <p>McgeheeChamber.com is a Wordpress blog that I built for the chamber of commerce in my little hometown. I also taught the owner how to update content and post current info and articles.</p>
         </div><!--img-box-->
-        <hr>
+        <hr class="mobile-only">
         <div class="image-box">
             <img src="img/mobile-screenshot-arkansascity.jpg">
             <p>ArkansasCityUSA.com Is a WordPress site that I built for our state representative in order to promote tourism to the historic town of Arkansas City. It features a javascript powered image carousel header.</p>
@@ -154,6 +170,7 @@ start-work-section
 end-work-section
 ====================================================
 -->
+
 
 
 <!--
@@ -184,11 +201,7 @@ end-about-section
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-<script type="text/javascript">
-$(".navbar-toggle").click(function(){
-    $(".navbar-menue").toggle();
-});
-</script>
+
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
