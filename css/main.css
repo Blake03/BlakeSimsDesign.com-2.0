@@ -607,7 +607,7 @@ strong {
   text-align: center;
 }
 #responsive .wrapper, #development .wrapper {
-  padding: 7vw 15px;
+  padding: 12vw 15px;
   margin: 0px auto;
 }
 @media only screen and (min-width: 600px) {
@@ -632,7 +632,7 @@ strong {
   text-align: center;
 }
 #work .wrapper {
-  padding: 7vw 15px;
+  padding: 12vw 15px;
 }
 #work .wrapper h2 {
   padding-bottom: 20px;
@@ -646,6 +646,11 @@ strong {
   line-height: 1.2;
   font-size: .8em;
 }
+@media only screen and (max-height: 768px) {
+  #work .wrapper .image-box {
+    max-width: 39vh;
+  }
+}
 #work .wrapper .image-box img {
   width: 100%;
 }
@@ -653,19 +658,22 @@ strong {
 #about {
   background-image: url("../img/skyfield.jpg");
   background-size: cover;
+  background-position: bottom left;
 }
 #about .wrapper {
-  padding: 7vw 15px;
+  padding: 12vw 15px;
+}
+#about .wrapper .text-box-left {
   text-align: justify;
   max-width: 500px;
   margin: 0 auto;
 }
-#about .wrapper h2 {
+#about .wrapper .text-box-left h2 {
   text-align: center;
   padding-bottom: 20px;
   color: #dcc66d;
 }
-#about .wrapper .button {
+#about .wrapper .text-box-left .button {
   background: #0f6f16;
   display: inline-block;
   padding: 6px 30px;
@@ -847,6 +855,9 @@ strong {
     padding-top: 92px;
   }
 
+  #work {
+    font-size: 1.2em;
+  }
   #work .wrapper {
     max-width: 100%;
     margin-left: auto;
@@ -900,7 +911,7 @@ strong {
 }
 @media only screen and (min-width: 960px) and (min-width: 1040px) {
   #work .wrapper .image-box {
-    margin: 19px;
+    margin: 16px;
   }
 }
 @media only screen and (min-width: 960px) and (max-height: 768px) {
@@ -912,6 +923,70 @@ strong {
 @media only screen and (min-width: 960px) {
   #work .wrapper .mobile-only {
     display: none;
+  }
+
+  #about {
+    background-image: url("../img/skyfield-desktop.jpg");
+    font-size: 1.2em;
+  }
+  #about .wrapper {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6vw 75px;
+  }
+  #about .wrapper:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  #about .wrapper .text-box-left {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  #about .wrapper .text-box-left .button {
+    display: none;
+  }
+  #about .wrapper .text-box-right {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    text-align: center;
+  }
+  #about .wrapper .text-box-right h2 {
+    padding-bottom: 20px;
+  }
+  #about .wrapper .text-box-right ul {
+    padding-bottom: 20px;
+  }
+  #about .wrapper .text-box-right li {
+    width: 40%;
+    display: inline-block;
+  }
+  #about .wrapper .text-box-right .button, #about .wrapper .text-box-right .button:visited {
+    display: inline-block;
+    background-color: #0f6f16;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+  }
+  #about .wrapper .text-box-right .button:hover, #about .wrapper .text-box-right .button:visited:hover {
+    background: #0e7b17;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+  #about .wrapper .text-box-right .button:active, #about .wrapper .text-box-right .button:visited:active {
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24), 0 0px 0px 0 transparent;
+    border: 1px solid #565252;
   }
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {

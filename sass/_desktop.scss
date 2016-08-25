@@ -71,6 +71,7 @@ h2{
 
 
 #work{
+	font-size: 1.2em;
 	.wrapper{
 		@include container;
 		padding: $wrapper-padding-desktop;
@@ -107,7 +108,7 @@ h2{
 			display: inline-block;
 			margin: 6px;
 			@media only screen and (min-width: 1040px){
-				margin: 19px;
+				margin: 16px;
 			}
 			@media only screen and (max-height: 768px){
             max-width: 39vh;
@@ -120,5 +121,54 @@ h2{
 #work .wrapper .mobile-only{
 	display: none;
 }
+
+#about{
+    background-image: url("../img/skyfield-desktop.jpg");
+    font-size: 1.2em;
+    .wrapper{
+    	@include container;
+    	padding: 6vw 75px;
+		.text-box-left{
+			@include span(6 of 12);
+			.button{
+				display: none;
+			}
+		}
+		.text-box-right{
+			@include span(6 of 12 last);
+			text-align: center;
+			h2{
+				padding-bottom: 20px;
+			}
+			ul{
+				padding-bottom: 20px;
+			}
+			li{
+				width: 40%;
+				display: inline-block;
+			}
+			.button, .button:visited{
+				display: inline-block;
+    			background-color: #0f6f16;
+    			padding: 12px;
+    			border-radius: 6px;
+    			box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    			margin-top: 20px;
+    			&:hover{
+    				  background: #0e7b17;
+    				  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    			}
+    			&:active{
+    				box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 0px 0px 0 rgba(0,0,0,0);
+    				border: 1px solid #565252;
+				}
+    		}			
+		}
+
+    }
+
+}
+
+
 }
 

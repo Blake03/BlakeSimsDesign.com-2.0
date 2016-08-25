@@ -219,7 +219,9 @@ strong{
                 }
                 .image-box{
                     max-width: 45vh;
-
+                    @media only screen and (max-height: 768px){
+                        max-width: 39vh;
+                    }
                     padding: 5px;
                     border-radius: 5px;
                     margin: 0 auto;
@@ -238,28 +240,32 @@ strong{
 #about{
     background-image: url("../img/skyfield.jpg");
     background-size: cover;
+    background-position: bottom left;
         .wrapper{
             padding: $wrapper-padding-mobile;
-            text-align: justify;
-            max-width: 500px;
-            margin: 0 auto;
-                h2{
-                    text-align: center;
-                    padding-bottom: 20px;
-                    color: #dcc66d;
-                }
-                .button{
-                    background: #0f6f16;
-                    display: inline-block;
-                    padding: 6px 30px;
-                    margin-top: 20px;
-                    color: #fff;
-                    text-decoration: none;
-                    border-radius: 6px;
-                    position: relative;
-                    cursor: pointer;
-                    font-size: 1.2em;
-                }
+            .text-box-left{
+                text-align: justify;
+                max-width: 500px;
+                margin: 0 auto;
+                 h2{
+                        text-align: center;
+                        padding-bottom: 20px;
+                        color: #dcc66d;
+                    }
+                    .button{
+                        background: #0f6f16;
+                        display: inline-block;
+                        padding: 6px 30px;
+                        margin-top: 20px;
+                        color: #fff;
+                        text-decoration: none;
+                        border-radius: 6px;
+                        position: relative;
+                        cursor: pointer;
+                        font-size: 1.2em;
+                    }
+            }
+       
         }
 }
 
