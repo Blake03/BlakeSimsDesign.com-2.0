@@ -1,7 +1,12 @@
+ /* ===========================================================================
+   Large Screen Styles
+   ============================================================================ */
+
+
 @media only screen and (min-width: $breakpoint-desktop){
 
 .desktop-only{
-	display: inherit;
+	display: initial;
 }
 
 h2{
@@ -15,22 +20,22 @@ h2{
 
 #welcome .wrapper{	
 	.heading{
-		font-size: 7.8vw;
+		font-size: 6.8vw;
 	}
 	.sub-heading{
-		font-size: 5.1vw;
+		font-size: 4.6vw;
 	}
 	.ghost-button{
     	border: .3vw solid #fff;
     	border-radius: .5vw;
     	padding: 4px 10px;
     	margin: 5px 2px;
-    	font-size: 1.7vw;
+    	font-size: 1.6vw;
     	font-weight: bold;
     	width: unset;
 	}
 	.social-icons a{
-		font-size: 5vw;
+		font-size: 4vw;
     	margin: 0px 1vw;
 	}
 
@@ -86,7 +91,7 @@ h2{
 				padding: 0px 10px;
 				}
 				@media only screen and (min-width: 1200px){
-					padding: 0px 30px;
+					padding: 0px 25px;
 				}
 			}
 			img:nth-child(3){
@@ -151,7 +156,7 @@ h2{
 				display: inline-block;
     			background-color: #0f6f16;
     			padding: 12px;
-    			border-radius: 6px;
+    			border-radius: 6px; 
     			box-shadow: 0 1px 3px rgba(0,0,0,0.6);
     			margin-top: 20px;
     			&:hover{
@@ -172,3 +177,4 @@ h2{
 
 }
 
+ 

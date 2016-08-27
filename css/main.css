@@ -9,7 +9,7 @@ html {
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
   /* 2 */
 }
 
@@ -54,7 +54,7 @@ progress,
 video {
   display: inline-block;
   /* 1 */
-  vertical-align: baseline;
+  vertical-align: baseline
   /* 2 */
 }
 
@@ -233,7 +233,7 @@ textarea {
   /* 1 */
   font: inherit;
   /* 2 */
-  margin: 0;
+  margin: 0
   /* 3 */
 }
 
@@ -268,7 +268,7 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
-  cursor: pointer;
+  cursor: pointer
   /* 3 */
 }
 
@@ -308,7 +308,7 @@ input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
-  padding: 0;
+  padding: 0
   /* 2 */
 }
 
@@ -329,7 +329,7 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  box-sizing: content-box;
+  box-sizing: content-box
   /* 2 */
 }
 
@@ -359,7 +359,7 @@ fieldset {
 legend {
   border: 0;
   /* 1 */
-  padding: 0;
+  padding: 0
   /* 2 */
 }
 
@@ -445,13 +445,6 @@ html {
   line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -462,9 +455,6 @@ html {
   text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
 hr {
   display: block;
   height: 1px;
@@ -515,7 +505,7 @@ textarea {
 }
 
 /* ====================================================================================
-   Mobile styles
+   Mobile & Tablet(portrait view) Styles
    ==================================================================================== */
 .desktop-only {
   display: none;
@@ -560,8 +550,6 @@ strong {
 .navbar .menu-item {
   display: inline-block;
   padding-top: 3px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 33.33333%;
   float: left;
@@ -571,9 +559,9 @@ strong {
 }
 
 #welcome {
-  background-image: url("../img/bsd-bg.jpg");
   height: 100vh;
-  background-position: bottom right;
+  background-image: url("../img/bsd-bg.jpg");
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -690,50 +678,6 @@ strong {
    Helper classes
    ========================================================================== */
 /*
- * Hide visually and from screen readers
- */
-.hidden {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-.invisible {
-  visibility: hidden;
-}
-
-/*
  * Clearfix: contain floats
  *
  * For modern browsers
@@ -748,7 +692,7 @@ strong {
 .clearfix:after {
   content: " ";
   /* 1 */
-  display: table;
+  display: table
   /* 2 */
 }
 
@@ -756,9 +700,12 @@ strong {
   clear: both;
 }
 
+/* ===========================================================================
+  Large Screen Styles
+  ============================================================================ */
 @media only screen and (min-width: 960px) {
   .desktop-only {
-    display: inherit;
+    display: initial;
   }
 
   h2 {
@@ -770,22 +717,22 @@ strong {
   }
 
   #welcome .wrapper .heading {
-    font-size: 7.8vw;
+    font-size: 6.8vw;
   }
   #welcome .wrapper .sub-heading {
-    font-size: 5.1vw;
+    font-size: 4.6vw;
   }
   #welcome .wrapper .ghost-button {
     border: .3vw solid #fff;
     border-radius: .5vw;
     padding: 4px 10px;
     margin: 5px 2px;
-    font-size: 1.7vw;
+    font-size: 1.6vw;
     font-weight: bold;
     width: unset;
   }
   #welcome .wrapper .social-icons a {
-    font-size: 5vw;
+    font-size: 4vw;
     margin: 0px 1vw;
   }
 
@@ -801,8 +748,6 @@ strong {
     clear: both;
   }
   #responsive .wrapper .image-box, #development .wrapper .image-box {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 50%;
     float: left;
@@ -814,8 +759,6 @@ strong {
   }
   #responsive .wrapper .text-box, #development .wrapper .text-box {
     padding-top: 150px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 50%;
     float: left;
@@ -835,8 +778,6 @@ strong {
     clear: both;
   }
   #development .wrapper .image-box {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 50%;
     float: left;
@@ -845,8 +786,6 @@ strong {
     float: right;
   }
   #development .wrapper .text-box {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 50%;
     float: left;
@@ -886,7 +825,7 @@ strong {
 }
 @media only screen and (min-width: 960px) and (min-width: 1200px) {
   #work .wrapper .large-image-box img {
-    padding: 0px 30px;
+    padding: 0px 25px;
   }
 }
 @media only screen and (min-width: 960px) {
@@ -941,8 +880,6 @@ strong {
     clear: both;
   }
   #about .wrapper .text-box-left {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 50%;
     float: left;
@@ -953,8 +890,6 @@ strong {
     display: none;
   }
   #about .wrapper .text-box-right {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 50%;
     float: right;
@@ -989,6 +924,9 @@ strong {
     border: 1px solid #565252;
   }
 }
+/* ==================================
+  Print classes
+  =================================== */
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
@@ -1068,3 +1006,5 @@ strong {
     page-break-after: avoid;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
