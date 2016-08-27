@@ -1,7 +1,7 @@
 
 # Greetings human
 
-	My name is BlakeSimsDesign.com
+	I am BlakeSimsDesign.com
 
 	I was built by Blake Sims
 
@@ -20,10 +20,12 @@
 
     GitHub = github.com/Blake03
 
+    Linkedin = linkedin.com/in/blake-sims-868a2279
+
         
 # Technology Used
                    
-	HTML5, CSS3, SASS, jQuery,
+	HTML5, CSS3, Sass, Susy, jQuery,
 
 	Modernizer, Font Awesome, Normalize.css,
 

@@ -81,17 +81,29 @@ h2{
 		@include container;
 		padding: $wrapper-padding-desktop;
 		.large-image-box{
-			width: 56vw;
+			width: 58vw;
     		display: inline-block;
     		float: left;
 			img{
-				max-height: 70vh;
-				padding: 0px 2px;
-				@media only screen and (min-width: 1025px){
-				padding: 0px 10px;
+				max-height: 82vh;
+				padding: 0px 2vmin;
+				@media only screen and (min-height: 620px){
+            	max-height: 65vh;
+            	padding: 0px 1vw;
+            	}
+				@media only screen and (min-height: 790px){
+            	max-height: 55vh;
+            	padding: 0px 1vw;
+            	}
+            	@media only screen and (min-height: 965px){
+            	max-height: 50vh;
+            	padding: 0px 1vw;
+            	}
+				@media only screen and (min-width: 1125px){
+				padding: 0px 2vw;
 				}
 				@media only screen and (min-width: 1200px){
-					padding: 0px 25px;
+					padding: 0px 2.8vw;
 				}
 			}
 			img:nth-child(3){
@@ -111,13 +123,11 @@ h2{
 		}
 		.image-box{
 			display: inline-block;
-			margin: 6px;
-			@media only screen and (min-width: 1040px){
-				margin: 16px;
+			max-width: 25vw; 
+			margin: 2vmin;
+			p{
+				padding-top: 7px;
 			}
-			@media only screen and (max-height: 768px){
-            max-width: 39vh;
-            }
 		}
 	}
 }
