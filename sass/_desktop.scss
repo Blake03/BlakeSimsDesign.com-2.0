@@ -13,35 +13,38 @@ h2{
 	font-size: 3vw;
 }
 
-
+ /*=======Navbar(large)=======*/
 .navbar{
 	font-size: 1.5vw;
 }
 
-#welcome .wrapper{	
-	.heading{
-		font-size: 6.8vw;
-	}
-	.sub-heading{
-		font-size: 4.6vw;
-	}
-	.ghost-button{
-    	border: .3vw solid #fff;
-    	border-radius: .5vw;
-    	padding: 4px 10px;
-    	margin: 5px 2px;
-    	font-size: 1.6vw;
-    	font-weight: bold;
-    	width: unset;
-	}
-	.social-icons a{
-		font-size: 4vw;
-    	margin: 0px 1vw;
-	}
+ /*=======Welcome-Section(large)=======*/
+#welcome{
+	background-image: $background-welcome-desktop;
+		.wrapper{	
+			.heading{
+				font-size: 6.8vw;
+			}
+			.sub-heading{
+				font-size: 4.6vw;
+			}
+			.ghost-button{
+    			border: .3vw solid #fff;
+    			border-radius: .5vw;
+    			padding: 4px 10px;
+    			margin: 5px 2px;
+    			font-size: 1.6vw;
+    			font-weight: bold;
+    			width: unset;
+			}
+			.social-icons a{
+				font-size: 4vw;
+    			margin: 0px 1vw;
+			}
 
+		}
 }
-
-
+ /*=======Resopnsive-Section(large)=======*/
 #responsive{
 	.wrapper{
 		@include container;
@@ -59,6 +62,7 @@ h2{
 	}
 }
 
+ /*=======Devlopment-Section(large)=======*/
 #development{
 	.wrapper{
 		@include container;
@@ -74,7 +78,7 @@ h2{
 	}
 }
 
-
+ /*=======Work-Section(large)=======*/
 #work{
 	font-size: 1.2em;
 	.wrapper{
@@ -106,28 +110,24 @@ h2{
 					padding: 0px 2.8vw;
 				}
 			}
-			img:nth-child(3){
-				padding-right: 0px;
-			}
 		}
 		.large-text-box{
     		max-width: 35vw;
     		text-align: justify;
     		display: inline-block;
 			h4{
-				text-align: center
+				text-align: center;
+				padding-bottom: 5px;
 			}
 			p{
 				padding-bottom: 40px;
+				font-size: 17px;
 			}
 		}
 		.image-box{
 			display: inline-block;
 			max-width: 25vw; 
 			margin: 2vmin;
-			p{
-				padding-top: 7px;
-			}
 		}
 	}
 }
@@ -137,8 +137,9 @@ h2{
 	display: none;
 }
 
+ /*=======About-Section(large)=======*/
 #about{
-    background-image: url("../img/skyfield-desktop.jpg");
+    background-image: $background-about-desktop;
     font-size: 1.2em;
     .wrapper{
     	@include container;

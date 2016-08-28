@@ -108,7 +108,7 @@ strong{
     font-weight: bold;
     color: #dcc66d;
 }
- 
+ /*=======Navbar(small)=======*/
 .navbar{
     font-size: 3vw;
     width: 100%;
@@ -134,7 +134,7 @@ strong{
         }
 }
 
-
+ /*=======Welcome-Section(small)=======*/
 #welcome{
     height: 100vh;
     background-image: $background-welcome;
@@ -168,7 +168,7 @@ strong{
 }
 
 
-
+ /*=======Responsive & Development-Sections(small)=======*/
 #responsive{
     background-color: $background-responsive;
     text-align: center;
@@ -190,7 +190,6 @@ strong{
 }
 
 
-
 #development{
     @extend #responsive;
     background: #26561e;
@@ -198,7 +197,7 @@ strong{
 }
 
 
-
+ /*=======Work-Section(small)=======*/
 #work{
     background: #290606;
     text-align: center;
@@ -221,12 +220,15 @@ strong{
                         img{
                             width: 100%;
                         }
+                        p{
+                            padding-top: 7px;
+                        }
                 }
         }
 }
 
 
-
+ /*=======About-Section(small)=======*/
 #about{ 
     background-image: url("../img/skyfield.jpg");
     background-size: cover;

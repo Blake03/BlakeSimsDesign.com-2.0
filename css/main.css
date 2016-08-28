@@ -529,6 +529,7 @@ strong {
   color: #dcc66d;
 }
 
+/*=======Navbar(small)=======*/
 .navbar {
   font-size: 3vw;
   width: 100%;
@@ -558,9 +559,10 @@ strong {
   text-align: center;
 }
 
+/*=======Welcome-Section(small)=======*/
 #welcome {
   height: 100vh;
-  background-image: url("../img/bsd-bg.jpg");
+  background-image: url("../img/mobile-bsd-bg.jpg");
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -590,6 +592,7 @@ strong {
   margin: 0px 3px;
 }
 
+/*=======Responsive & Development-Sections(small)=======*/
 #responsive, #development {
   background-color: #333352;
   text-align: center;
@@ -615,6 +618,7 @@ strong {
   background: #26561e;
 }
 
+/*=======Work-Section(small)=======*/
 #work {
   background: #290606;
   text-align: center;
@@ -642,7 +646,11 @@ strong {
 #work .wrapper .image-box img {
   width: 100%;
 }
+#work .wrapper .image-box p {
+  padding-top: 7px;
+}
 
+/*=======About-Section(small)=======*/
 #about {
   background-image: url("../img/skyfield.jpg");
   background-size: cover;
@@ -712,10 +720,15 @@ strong {
     font-size: 3vw;
   }
 
+  /*=======Navbar(large)=======*/
   .navbar {
     font-size: 1.5vw;
   }
 
+  /*=======Welcome-Section(large)=======*/
+  #welcome {
+    background-image: url("../img/bsd-bg.jpg");
+  }
   #welcome .wrapper .heading {
     font-size: 6.8vw;
   }
@@ -736,6 +749,7 @@ strong {
     margin: 0px 1vw;
   }
 
+  /*=======Resopnsive-Section(large)=======*/
   #responsive .wrapper, #development .wrapper {
     max-width: 100%;
     margin-left: auto;
@@ -766,6 +780,7 @@ strong {
     padding-right: 0.83333%;
   }
 
+  /*=======Devlopment-Section(large)=======*/
   #development .wrapper {
     max-width: 100%;
     margin-left: auto;
@@ -794,6 +809,7 @@ strong {
     padding-top: 92px;
   }
 
+  /*=======Work-Section(large)=======*/
   #work {
     font-size: 1.2em;
   }
@@ -847,9 +863,6 @@ strong {
   }
 }
 @media only screen and (min-width: 992px) {
-  #work .wrapper .large-image-box img:nth-child(3) {
-    padding-right: 0px;
-  }
   #work .wrapper .large-text-box {
     max-width: 35vw;
     text-align: justify;
@@ -857,23 +870,23 @@ strong {
   }
   #work .wrapper .large-text-box h4 {
     text-align: center;
+    padding-bottom: 5px;
   }
   #work .wrapper .large-text-box p {
     padding-bottom: 40px;
+    font-size: 17px;
   }
   #work .wrapper .image-box {
     display: inline-block;
     max-width: 25vw;
     margin: 2vmin;
   }
-  #work .wrapper .image-box p {
-    padding-top: 7px;
-  }
 
   #work .wrapper .mobile-only {
     display: none;
   }
 
+  /*=======About-Section(large)=======*/
   #about {
     background-image: url("../img/skyfield-desktop.jpg");
     font-size: 1.2em;

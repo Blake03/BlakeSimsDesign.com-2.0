@@ -14,11 +14,13 @@ $wrapper-padding-desktop: 6vw 15px;
 $breakpoint-tablet: 600px;
 $breakpoint-desktop: 992px;
 
-$background-welcome: url("../img/bsd-bg.jpg");
+$background-welcome: url("../img/mobile-bsd-bg.jpg");
+$background-welcome-desktop: url("../img/bsd-bg.jpg");
 $background-responsive: #333352;
 $background-development: #26561e;
 $background-work: #290606;
-$background-who-is-blake: url("../img/skyfield.jpg");
+$background-about: url("../img/skyfield.jpg");
+$background-about-desktop: url("../img/skyfield-desktop.jpg");
 
 
 @import "susy";
