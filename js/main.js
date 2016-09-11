@@ -11,4 +11,16 @@ $(window).on('scroll', function() {
       $('.navbar').fadeOut('slow');
   }
 });
-        
+     
+//smooth-scroll-effect   
+$("a").on("click", function(b) {
+    if ("" !== this.hash) {
+        b.preventDefault();
+        var a = this.hash;
+        $("html, body").animate({
+            scrollTop: $(a).offset().top
+        }, 800, function() {
+            window.location.hash = a
+        })
+    }
+});
