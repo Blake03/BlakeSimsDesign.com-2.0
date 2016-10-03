@@ -94,6 +94,12 @@ textarea {
 
 body{
     color: $primary-color;
+    text-shadow: 0 0px 9px rgba(0, 0, 0, .5)
+}
+
+strong{
+    font-weight: bold;
+    color: #dcc66d;
 }
 
 h2{
@@ -104,11 +110,8 @@ h2{
 }
 
 
-strong{
-    font-weight: bold;
-    color: #dcc66d;
-}
- /*=======Navbar(small)=======*/
+
+ /*=======Navbar(Mobile)=======*/
 .navbar{
     font-size: 3vw;
     width: 100%;
@@ -123,7 +126,6 @@ strong{
         }
         .logo{
             position: relative;
-            /* padding: 0px 5px; */
             left: 5px;
         }
         .menu-item{
@@ -134,7 +136,7 @@ strong{
         }
 }
 
- /*=======Welcome-Section(small)=======*/
+ /*=======Welcome-Section(Mobile)=======*/
 #welcome{
     height: 100vh;
     background-image: $background-welcome;
@@ -168,7 +170,7 @@ strong{
 }
 
 
- /*=======Responsive & Development-Sections(small)=======*/
+ /*=======Responsive & Development-Sections(Mobile)=======*/
 #responsive{
     background-color: $background-responsive;
     text-align: center;
@@ -197,7 +199,7 @@ strong{
 }
 
 
- /*=======Work-Section(small)=======*/
+ /*=======Work-Section(Mobile)=======*/
 #work{
     background: #290606;
     text-align: center;
@@ -228,7 +230,7 @@ strong{
 }
 
 
- /*=======About-Section(small)=======*/
+ /*=======About-Section(Mobile)=======*/
 #about{ 
     background-image: url("../img/skyfield.jpg");
     background-size: cover;

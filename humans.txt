@@ -29,4 +29,4 @@
 
 	Modernizer, Font Awesome, Normalize.css,
 
-	SublimeText 3, Git, Photoshop cc, Linux
+	SublimeText 3, Prepros, Git, Photoshop cc, Linux, Windows

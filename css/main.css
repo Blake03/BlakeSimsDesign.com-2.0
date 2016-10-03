@@ -9,7 +9,7 @@ html {
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
-  -webkit-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%;
   /* 2 */
 }
 
@@ -54,7 +54,7 @@ progress,
 video {
   display: inline-block;
   /* 1 */
-  vertical-align: baseline
+  vertical-align: baseline;
   /* 2 */
 }
 
@@ -233,7 +233,7 @@ textarea {
   /* 1 */
   font: inherit;
   /* 2 */
-  margin: 0
+  margin: 0;
   /* 3 */
 }
 
@@ -268,7 +268,7 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
-  cursor: pointer
+  cursor: pointer;
   /* 3 */
 }
 
@@ -308,7 +308,7 @@ input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
-  padding: 0
+  padding: 0;
   /* 2 */
 }
 
@@ -329,7 +329,7 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  box-sizing: content-box
+  box-sizing: content-box;
   /* 2 */
 }
 
@@ -359,7 +359,7 @@ fieldset {
 legend {
   border: 0;
   /* 1 */
-  padding: 0
+  padding: 0;
   /* 2 */
 }
 
@@ -411,7 +411,6 @@ time, mark, audio, video {
   border: 0;
   outline: 0;
   font-size: 100%;
-  color: #fff;
   vertical-align: baseline;
   background: transparent;
 }
@@ -513,15 +512,7 @@ textarea {
 
 body {
   color: #fff;
-}
-
-h2 {
-  font-size: 8vw;
-}
-@media only screen and (min-width: 600px) {
-  h2 {
-    font-size: 7vw;
-  }
+  text-shadow: 0 0px 9px rgba(0, 0, 0, 0.5);
 }
 
 strong {
@@ -529,7 +520,17 @@ strong {
   color: #dcc66d;
 }
 
-/*=======Navbar(small)=======*/
+h2 {
+  font-size: 8vw;
+}
+
+@media only screen and (min-width: 600px) {
+  h2 {
+    font-size: 7vw;
+  }
+}
+
+/*=======Navbar(Mobile)=======*/
 .navbar {
   font-size: 3vw;
   width: 100%;
@@ -538,16 +539,18 @@ strong {
   box-sizing: border-box;
   padding: 5px;
 }
+
 .navbar .navbar-toggle {
   right: 5px;
   position: relative;
   float: right;
 }
+
 .navbar .logo {
   position: relative;
-  /* padding: 0px 5px; */
   left: 5px;
 }
+
 .navbar .menu-item {
   display: inline-block;
   padding-top: 3px;
@@ -559,7 +562,7 @@ strong {
   text-align: center;
 }
 
-/*=======Welcome-Section(small)=======*/
+/*=======Welcome-Section(Mobile)=======*/
 #welcome {
   height: 100vh;
   background-image: url("../img/mobile-bsd-bg.jpg");
@@ -568,16 +571,20 @@ strong {
   background-size: cover;
   text-align: center;
 }
+
 #welcome .wrapper {
   padding-top: 15vh;
 }
+
 #welcome .wrapper .heading {
   font-size: 9.8vw;
   line-height: 1;
 }
+
 #welcome .wrapper .sub-heading {
   font-size: 7.1vw;
 }
+
 #welcome .wrapper .ghost-button {
   display: inline-block;
   border: 2px solid #fff;
@@ -587,29 +594,34 @@ strong {
   width: 35vw;
   font-size: 4vw;
 }
+
 #welcome .wrapper .social-icons a {
   font-size: 8vw;
   margin: 0px 3px;
 }
 
-/*=======Responsive & Development-Sections(small)=======*/
+/*=======Responsive & Development-Sections(Mobile)=======*/
 #responsive, #development {
   background-color: #333352;
   text-align: center;
 }
+
 #responsive .wrapper, #development .wrapper {
   padding: 12vw 15px;
   margin: 0px auto;
 }
+
 @media only screen and (min-width: 600px) {
   #responsive .wrapper, #development .wrapper {
     max-width: 66vw;
     font-size: 2.3vw;
   }
 }
+
 #responsive .wrapper .image-box, #development .wrapper .image-box {
   max-width: 75vh;
 }
+
 #responsive .wrapper .image-box img, #development .wrapper .image-box img {
   width: 100%;
 }
@@ -618,17 +630,20 @@ strong {
   background: #26561e;
 }
 
-/*=======Work-Section(small)=======*/
+/*=======Work-Section(Mobile)=======*/
 #work {
   background: #290606;
   text-align: center;
 }
+
 #work .wrapper {
   padding: 12vw 15px;
 }
+
 #work .wrapper h2 {
   padding-bottom: 20px;
 }
+
 #work .wrapper .image-box {
   max-width: 45vh;
   padding: 5px;
@@ -638,37 +653,44 @@ strong {
   line-height: 1.2;
   font-size: .8em;
 }
+
 @media only screen and (max-height: 768px) {
   #work .wrapper .image-box {
     max-width: 39vh;
   }
 }
+
 #work .wrapper .image-box img {
   width: 100%;
 }
+
 #work .wrapper .image-box p {
   padding-top: 7px;
 }
 
-/*=======About-Section(small)=======*/
+/*=======About-Section(Mobile)=======*/
 #about {
   background-image: url("../img/skyfield.jpg");
   background-size: cover;
   background-position: bottom left;
 }
+
 #about .wrapper {
   padding: 12vw 15px;
 }
+
 #about .wrapper .text-box-left {
   text-align: justify;
   max-width: 500px;
   margin: 0 auto;
 }
+
 #about .wrapper .text-box-left h2 {
   text-align: center;
   padding-bottom: 20px;
   color: #dcc66d;
 }
+
 #about .wrapper .text-box-left .button {
   background: #0f6f16;
   display: inline-block;
@@ -700,7 +722,7 @@ strong {
 .clearfix:after {
   content: " ";
   /* 1 */
-  display: table
+  display: table;
   /* 2 */
 }
 
@@ -709,23 +731,20 @@ strong {
 }
 
 /* ===========================================================================
-  Large Screen Styles
-  ============================================================================ */
+   Desktop and Tablet(landscape) Styles
+   ============================================================================ */
 @media only screen and (min-width: 992px) {
   .desktop-only {
     display: initial;
   }
-
   h2 {
     font-size: 3vw;
   }
-
-  /*=======Navbar(large)=======*/
+  /*=======Navbar(Desktop)=======*/
   .navbar {
     font-size: 1.5vw;
   }
-
-  /*=======Welcome-Section(large)=======*/
+  /*=======Welcome-Section(Desktop)=======*/
   #welcome {
     background-image: url("../img/bsd-bg.jpg");
   }
@@ -743,13 +762,23 @@ strong {
     font-size: 1.6vw;
     font-weight: bold;
     width: unset;
+    transition: all 0.2s ease-out;
+  }
+  #welcome .wrapper .ghost-button:hover {
+    background-color: rgba(176, 144, 144, 0.4);
+    box-shadow: 0 0px 15px rgba(200, 200, 255, 0.4);
+    transition: all 0.1s ease-in;
   }
   #welcome .wrapper .social-icons a {
     font-size: 4vw;
     margin: 0px 1vw;
+    transition: all 0.2s ease-out;
   }
-
-  /*=======Resopnsive-Section(large)=======*/
+  #welcome .wrapper .social-icons a:hover {
+    text-shadow: 0 0px 15px rgba(200, 200, 255, 0.4);
+    transition: all 0.1s ease-in;
+  }
+  /*=======Resopnsive-Section(Desktop)=======*/
   #responsive .wrapper, #development .wrapper {
     max-width: 100%;
     margin-left: auto;
@@ -779,8 +808,7 @@ strong {
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-
-  /*=======Devlopment-Section(large)=======*/
+  /*=======Devlopment-Section(Desktop)=======*/
   #development .wrapper {
     max-width: 100%;
     margin-left: auto;
@@ -808,8 +836,7 @@ strong {
     padding-right: 0.83333%;
     padding-top: 92px;
   }
-
-  /*=======Work-Section(large)=======*/
+  /*=======Work-Section(Desktop)=======*/
   #work {
     font-size: 1.2em;
   }
@@ -834,34 +861,40 @@ strong {
     padding: 0px 2vmin;
   }
 }
+
 @media only screen and (min-width: 992px) and (min-height: 620px) {
   #work .wrapper .large-image-box img {
     max-height: 65vh;
     padding: 0px 1vw;
   }
 }
+
 @media only screen and (min-width: 992px) and (min-height: 790px) {
   #work .wrapper .large-image-box img {
     max-height: 55vh;
     padding: 0px 1vw;
   }
 }
+
 @media only screen and (min-width: 992px) and (min-height: 965px) {
   #work .wrapper .large-image-box img {
     max-height: 50vh;
     padding: 0px 1vw;
   }
 }
+
 @media only screen and (min-width: 992px) and (min-width: 1125px) {
   #work .wrapper .large-image-box img {
     padding: 0px 2vw;
   }
 }
+
 @media only screen and (min-width: 992px) and (min-width: 1200px) {
   #work .wrapper .large-image-box img {
     padding: 0px 2.8vw;
   }
 }
+
 @media only screen and (min-width: 992px) {
   #work .wrapper .large-text-box {
     max-width: 35vw;
@@ -881,12 +914,10 @@ strong {
     max-width: 25vw;
     margin: 2vmin;
   }
-
   #work .wrapper .mobile-only {
     display: none;
   }
-
-  /*=======About-Section(large)=======*/
+  /*=======About-Section(Desktop)=======*/
   #about {
     background-image: url("../img/skyfield-desktop.jpg");
     font-size: 1.2em;
@@ -947,12 +978,10 @@ strong {
     border: 1px solid #565252;
   }
 }
+
 /* ==================================
-  Print classes
-  =================================== */
-@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+   Print classes
+   =================================== */
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -967,67 +996,55 @@ strong {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster:
-       http://www.sanbeiji.com/archives/953 */
+                                   http://www.sanbeiji.com/archives/953 */
     box-shadow: none !important;
     text-shadow: none !important;
   }
-
   a,
   a:visited {
     text-decoration: underline;
   }
-
   a[href]:after {
     content: " (" attr(href) ")";
   }
-
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
-
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
-
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
-
   /*
-   * Printing Tables:
-   * http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
   thead {
     display: table-header-group;
   }
-
   tr,
   img {
     page-break-inside: avoid;
   }
-
   img {
     max-width: 100% !important;
   }
-
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3;
   }
-
   h2,
   h3 {
     page-break-after: avoid;
   }
 }
-
-/*# sourceMappingURL=main.css.map */

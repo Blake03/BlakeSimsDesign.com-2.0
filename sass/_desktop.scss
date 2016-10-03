@@ -1,5 +1,5 @@
  /* ===========================================================================
-   Large Screen Styles
+   Desktop and Tablet(landscape) Styles
    ============================================================================ */
 
  
@@ -11,14 +11,14 @@
 
 h2{
 	font-size: 3vw;
-}
+} 
 
- /*=======Navbar(large)=======*/
+ /*=======Navbar(Desktop)=======*/
 .navbar{
 	font-size: 1.5vw;
 }
 
- /*=======Welcome-Section(large)=======*/
+ /*=======Welcome-Section(Desktop)=======*/
 #welcome{
 	background-image: $background-welcome-desktop;
 		.wrapper{	
@@ -36,15 +36,27 @@ h2{
     			font-size: 1.6vw;
     			font-weight: bold;
     			width: unset;
+    			transition: all 0.2s ease-out;
+    			&:hover{
+    				background-color: rgba(176, 144, 144, 0.4);
+					box-shadow: 0 0px 15px rgba(200, 200, 400, .4);
+					transition: all 0.1s ease-in;
+    			}
 			}
 			.social-icons a{
 				font-size: 4vw;
     			margin: 0px 1vw;
+    			transition: all 0.2s ease-out;
+    			&:hover{
+   				    text-shadow: 0 0px 15px rgba(200, 200, 400, .4);
+					transition: all 0.1s ease-in;
+    			}
 			}
 
 		}
 }
- /*=======Resopnsive-Section(large)=======*/
+ 
+ /*=======Resopnsive-Section(Desktop)=======*/
 #responsive{
 	.wrapper{
 		@include container;
@@ -62,7 +74,7 @@ h2{
 	}
 }
 
- /*=======Devlopment-Section(large)=======*/
+ /*=======Devlopment-Section(Desktop)=======*/
 #development{
 	.wrapper{
 		@include container;
@@ -78,7 +90,7 @@ h2{
 	}
 }
 
- /*=======Work-Section(large)=======*/
+ /*=======Work-Section(Desktop)=======*/
 #work{
 	font-size: 1.2em;
 	.wrapper{
@@ -137,7 +149,7 @@ h2{
 	display: none;
 }
 
- /*=======About-Section(large)=======*/
+ /*=======About-Section(Desktop)=======*/
 #about{
     background-image: $background-about-desktop;
     font-size: 1.2em;
