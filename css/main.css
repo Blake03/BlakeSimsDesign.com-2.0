@@ -521,12 +521,12 @@ strong {
 }
 
 h2 {
-  font-size: 8vw;
+  font-size: 7vw;
 }
 
 @media only screen and (min-width: 600px) {
   h2 {
-    font-size: 7vw;
+    font-size: 4vw;
   }
 }
 
@@ -624,6 +624,10 @@ h2 {
 
 #responsive .wrapper .image-box img, #development .wrapper .image-box img {
   width: 100%;
+}
+
+#responsive .wrapper h2, #development .wrapper h2 {
+  padding-bottom: 10px;
 }
 
 #development {
@@ -736,6 +740,9 @@ h2 {
 @media only screen and (min-width: 992px) {
   .desktop-only {
     display: initial;
+  }
+  .mobile-only {
+    display: none;
   }
   h2 {
     font-size: 3vw;
