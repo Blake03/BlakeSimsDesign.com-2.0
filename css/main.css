@@ -619,6 +619,7 @@ h2 {
 }
 
 #responsive .wrapper .image-box, #development .wrapper .image-box {
+  margin: 0 auto;
   max-width: 75vh;
 }
 
